@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+<script src="js/script.js"></script>
+</head>
+<body id="loginbg">
+<div class="container" ng-app="loginApp" ng-controller="loginCtrl">
+  <form ng-submit="myFunction()"   >
+    <div class="row">
+      <div class="col-4"></div>
+      <div class="col-4" style="margin-top: 23%">
+        <div class="card" >
+          <div class="card-header bg-primary" style="color: aliceblue">Login</div>
+          <div class="card-body" >
+            <label>User Name</label>
+            <input type="text" ng-model="user" id="user" class="form-control">
+            <label>Password</label>
+            <input type="password" ng-model="pass" id="pass" class="form-control">
+          </div>
+          <div class="card-footer">
+            <input type="submit" class="btn bg-success" value="Login" style="float: right">
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+     
+      </div>
+    </div>
+    
+  </form>
+</div>
+</body>
+</html>
